@@ -1,0 +1,45 @@
+.institutionRows {
+  position: relative;
+  margin: 20px 0;
+}
+
+.moreBtn {
+  position: absolute;
+  right: -20px;
+  top: 20px;
+}
+
+.moreBtn button {
+  padding: 0 4px;
+  margin: 0 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.lessBtn {
+  position: absolute;
+  right: -20px;
+  top: 45px;
+}
+
+.lessBtn button {
+  padding: 0 4px;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.button {
+  background-color: #4166f5;
+  color: #FFFFFF;
+}
+
+.list {
+  padding-left: 0;
+}
+
+.list li {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=profile.module.css.map */

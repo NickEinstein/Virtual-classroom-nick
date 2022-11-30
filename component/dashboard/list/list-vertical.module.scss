@@ -1,0 +1,10 @@
+@import '../../../styles/variable';
+
+.listvertical {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+}

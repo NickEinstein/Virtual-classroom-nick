@@ -1,0 +1,53 @@
+@import '../../../styles/variable';
+
+.card {
+  cursor: pointer;
+  transition: all .5s ease;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+
+  &:hover {
+    box-shadow: none;
+    transition: all .5s ease;
+    opacity: .5;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.linkstyle {
+  color: $black !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn {
+  // padding: 3px;
+  font-size: 14px;
+  border: solid 1px $primary-yellow;
+  background-color: $primary-yellow;
+  border-radius: 20px;
+  width: 50px;
+  transition: all .5s ease;
+  &:hover {
+    background-color: transparent;
+    transition: all .5s ease;
+  }
+}
+
+.cardfooter {
+  display: flex;
+  justify-content: flex-end;
+  background-color: inherit;
+  border: none;
+  padding: none;
+}

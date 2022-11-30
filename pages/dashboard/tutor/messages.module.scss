@@ -1,0 +1,94 @@
+@import '../../../styles/variable';
+
+.cardheader {
+  padding: 10px 30px !important;
+  display: block;
+}
+
+.avatar {
+  display: inline-flex ;
+  margin-top: 6px;
+}
+
+.nametag {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+
+  p {
+    margin: 0;
+    line-height: 7px;
+    font-size: 12px;
+    color: #9B9B9B;
+    font-weight: 600;
+  }
+}
+
+.search {
+  input {
+    width: 100%;
+  }
+}
+
+.card {
+  border-radius:  15px 15px;
+  border: solid 1px $secondary-yellow;
+}
+.cardheader {
+  background: $secondary-yellow;
+  border-radius: 15px 15px 0 0 !important;
+}
+
+.cardbody {
+  table {
+    td a {
+      color: $black;
+      &:hover {
+        color: $purple;
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+      }
+    }
+  }
+}
+
+.starcolor {
+  color: $primary-yellow;
+  &:hover {
+    color: #000;
+  }
+}
+
+.addteacherbtn {
+  padding: 7px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  border: solid 1px $secondary-yellow;
+  transition: all .5s ease;
+  &:hover {
+    background: inherit;
+    transition: all .5s ease;
+  }
+}
+
+.availability {
+  ul {
+    padding-left: 0;
+    li {
+      display: inline-flex;
+      align-items: center;
+      font-size: 11px;
+
+      span {
+        border: none;
+      }
+    }
+  }
+}
+
+.formRow {
+  margin: 30px auto;
+}

@@ -1,0 +1,40 @@
+@import '../../../styles/variable';
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 50px 1fr auto;
+  margin: 20px 0;
+  column-gap: 10px;
+  width: 45%;
+}
+
+.title {
+  h5 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  span {
+    color: $secondary-blue;
+    font-size: 14px;
+    line-height: 5px;
+  }
+}
+
+.button {
+  background: $white;
+  border-radius: 6px;
+  border: solid 1px $purple;
+  padding: 3px 6px;
+  transition: all .5s ease-in-out;
+  color: $purple;
+  font-size: 12px;
+  font-weight: 600;
+
+  &:hover {
+    background: $purple;
+    color: $white;
+    transition: all .5s ease-in-out;
+  }
+}

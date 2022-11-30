@@ -1,0 +1,41 @@
+.list {
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+}
+
+.listheader {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px auto;
+      grid-template-columns: 50px auto;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.title {
+  color: #00BBF9;
+  margin-left: 20px;
+}
+
+.headertag {
+  display: inline-block;
+}
+
+.headertag span {
+  display: inline-block;
+}
+
+.nametag {
+  font-weight: 600;
+}
+
+.subjects {
+  color: #F15BB5;
+  display: block;
+  padding-left: 60px;
+  line-height: 10px;
+  position: absolute;
+  top: 35px;
+}
+/*# sourceMappingURL=list.module.css.map */

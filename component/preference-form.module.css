@@ -1,0 +1,60 @@
+.card {
+  border: none;
+}
+
+.cardHeader {
+  background-color: #4166f5;
+  color: #FFFFFF;
+  display: none !important;
+}
+
+.button {
+  color: #FFFFFF;
+  background-color: #4166f5;
+  border-radius: 9px;
+}
+
+.cardText {
+  font-size: 14px;
+}
+
+.institutionRows {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.moreBtn {
+  position: absolute;
+  right: -20px;
+  top: -5px;
+}
+
+.moreBtn button {
+  padding: 0 4px;
+  margin: 0 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.lessBtn {
+  position: absolute;
+  right: -20px;
+  top: 20px;
+}
+
+.lessBtn button {
+  padding: 0 4px;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.list {
+  padding-left: 0;
+}
+
+.list li {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=preference-form.module.css.map */

@@ -1,0 +1,59 @@
+.card {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+      grid-template-columns: 50px 1fr;
+  -ms-grid-column: 25;
+  grid-column: 25px;
+  border-radius: 9px;
+  border: solid 1px #9B5DE5;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  margin: 10px 0;
+}
+
+.card:hover {
+  background: linear-gradient(166.46deg, #EBFAFF -0.1%, #FDECF7 100.01%);
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.cardbody h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cardbody span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2px;
+  color: #9B9B9B;
+}
+
+.cardbody p {
+  color: #F15BB5;
+  font-size: 14px;
+  padding: 0 0 0 30px;
+}
+
+.cardbody p span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F15BB5;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=assignment.module.css.map */

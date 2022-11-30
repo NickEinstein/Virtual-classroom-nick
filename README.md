@@ -1,0 +1,1 @@
+#Frontend template of the CI Virtual Classroom project

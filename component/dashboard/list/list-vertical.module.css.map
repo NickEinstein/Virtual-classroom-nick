@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,cAAc,EAAE,MAAM;EACtB,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "list-vertical.module.scss",
+        "../../../styles/_variable.scss"
+    ],
+    "names": [],
+    "file": "list-vertical.module.css"
+}

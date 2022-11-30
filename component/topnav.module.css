@@ -1,0 +1,11 @@
+.buttons {
+  padding: 7px;
+  min-width: 120px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.buttons i {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=topnav.module.css.map */

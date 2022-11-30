@@ -1,0 +1,57 @@
+.itemheader {
+  margin: 0 !important;
+}
+
+.title {
+  display: inline-block !important;
+  margin-left: 20px;
+  font-weight: normal !important;
+  color: #00BBF9 !important;
+  font-size: 16px !important;
+}
+
+.headerhorizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 600;
+}
+
+.subjects {
+  color: #F15BB5;
+}
+
+.buttons button {
+  background: #4166f5 !important;
+  padding: 10px 20px !important;
+}
+
+.buttons button:hover {
+  background: #FFFFFF !important;
+  color: #4166f5 !important;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.buttons button:first-child {
+  background: #FFFFFF !important;
+  margin-right: 15px;
+  border: solid 1px #9B5DE5;
+  color: #9B5DE5;
+}
+
+.buttons button:first-child:hover {
+  background: #9B5DE5 !important;
+  color: #FFFFFF !important;
+  border: solid 1px #9B5DE5;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.cardbody {
+  padding-left: 50px;
+}
+/*# sourceMappingURL=requestcard.module.css.map */

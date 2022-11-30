@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,gBAAgB,CAAC;EACb,OAAO,EAAE,iBAAiB;CAQ7B;;AATD,AAMI,gBANY,CAMZ,GAAG,GAAG,KAAK,CAAC;EACV,QAAQ,EAAE,mBAAmB;CAC9B;;AAML,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,eAAe;EACtB,MAAM,EAAE,eAAe;EACvB,WAAW,EAAE,eAAe;EAC5B,aAAa,EAAE,eAAe;EAC9B,gBAAgB,ECbC,OAAO;EDcxB,eAAe,EAAE,eAAe;EAChC,MAAM,EAAE,kBAAkB;EAC1B,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CACxB;;AAED,AAAA,aAAa,CAAC;EACZ,QAAQ,EAAE,QAAQ;CACnB",
+    "sources": [
+        "stream-player.module.scss",
+        "../../../styles/_variable.scss"
+    ],
+    "names": [],
+    "file": "stream-player.module.css"
+}

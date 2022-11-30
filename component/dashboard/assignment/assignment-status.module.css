@@ -1,0 +1,41 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr auto;
+      grid-template-columns: 50px 1fr auto;
+  margin: 20px 0;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  width: 45%;
+}
+
+.title h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.title span {
+  color: #00BBF9;
+  font-size: 14px;
+  line-height: 5px;
+}
+
+.button {
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: solid 1px #9B5DE5;
+  padding: 3px 6px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  color: #9B5DE5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #9B5DE5;
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+/*# sourceMappingURL=assignment-status.module.css.map */

@@ -1,0 +1,59 @@
+@import '../styles/variable';
+
+
+.card {
+  border: none;
+}
+
+.cardHeader {
+  background-color: $primary-yellow;
+  color: $white;
+  display: none !important;
+}
+
+.button {
+  color: $white;
+  background-color: $primary-yellow;
+  border-radius: 9px;
+}
+
+.cardText {
+  font-size: 14px;
+}
+
+.institutionRows {
+  position: relative;
+  // margin: 20px 0;
+  margin-bottom: 10px;
+}
+.moreBtn {
+  position: absolute;
+  right: -20px;
+  top: -5px;
+  button {
+    padding: 0 4px;
+    margin: 0 10px;
+    font-size: 12px;
+    color: #fff;
+  }
+}
+.lessBtn {
+  position: absolute;
+  right: -20px;
+  top: 20px;
+  button {
+    padding: 0 4px ;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.list {
+  padding-left: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}

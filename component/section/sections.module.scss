@@ -1,0 +1,20 @@
+@import '../../styles/variable';
+
+
+.sectionBox {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 40px 20px;
+  box-shadow: 2px;
+  max-width: 200px;
+  border-radius: 9px;
+  background-color: #FFF;
+  margin: 5px;
+  border: solid 1px $primary-yellow;
+  transition: all .5s ease-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary-yellow;
+    transition: all .5s ease-out;
+  }
+}

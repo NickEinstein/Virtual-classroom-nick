@@ -1,0 +1,51 @@
+.paralax {
+  background-image: url("../../assets/banner.jpg");
+  background-size: cover;
+  padding: 200px 0;
+  position: relative;
+}
+
+.formWrapper {
+  border-radius: 9px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 9px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid 1px #4166f5;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.button:hover {
+  background-color: #4166f5;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.searchableTextField {
+  position: relative;
+}
+
+.subjectlist {
+  list-style: none;
+  background: #FFFFFF !important;
+  width: 100%;
+  text-align: left;
+  max-height: 400px;
+  padding-left: 0;
+  position: absolute;
+  left: 0;
+}
+
+.subjectlist li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.subjectlist li:hover {
+  background-color: #f2f2f2;
+}
+/*# sourceMappingURL=search-form.module.css.map */

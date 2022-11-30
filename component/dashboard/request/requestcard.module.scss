@@ -1,0 +1,50 @@
+@import '../../../styles/variable';
+
+.itemheader {
+  margin: 0 !important;
+}
+.title {
+  display: inline-block !important;
+  margin-left: 20px;
+  font-weight: normal !important;
+  color: $secondary-blue !important;
+  font-size: 16px !important;
+}
+
+.headerhorizontal {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.subjects {
+  color: $magenta;
+}
+
+.buttons {
+  button {
+    background: $secondary-yellow !important;
+    padding: 10px 20px !important;
+    &:hover {
+      background: $white !important;
+      color: $primary !important;
+      transition: all .5s ease-out;
+    }
+    &:first-child {
+      background: $white !important;
+      margin-right: 15px;
+      border: solid 1px $purple;
+      color: $purple;
+      &:hover {
+        background: $purple !important;
+        color: $white !important;
+        border: solid 1px $purple;
+        transition: all .5s ease-out;
+      }
+    }
+  }
+}
+
+.cardbody {
+  padding-left: 50px;
+}

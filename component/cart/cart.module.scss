@@ -1,0 +1,22 @@
+@import '../../styles/variable';
+
+.cartbtn {
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+.link:hover {
+  text-decoration: none !important;
+}
+
+.deletebtn {
+  padding: 0;
+  border: none;
+  background: inherit;
+}
+
+.select {
+  border: solid .5px $purple;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 20px;
+}

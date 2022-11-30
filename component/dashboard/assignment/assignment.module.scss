@@ -1,0 +1,51 @@
+@import '../../../styles/variable';
+
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-column: 25px;
+  border-radius: 9px;
+  border: solid 1px $purple;
+  padding: 20px;
+  cursor: pointer;
+  transition: all .5s ease-out;
+  margin: 10px 0;
+
+  &:hover {
+    background: linear-gradient(166.46deg, #EBFAFF -0.1%, #FDECF7 100.01%);
+    transition: all .5s ease-out;
+  }
+}
+
+.cardbody {
+  h5 {
+    font-size: 16px;
+    margin: 0;
+  }
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2px;
+    color: #9B9B9B;
+  }
+}
+
+.cardbody p {
+  color: $magenta;
+  font-size: 14px;
+  padding: 0 0 0 30px;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $magenta;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: $white;
+    margin-left: 10px;
+  }
+}

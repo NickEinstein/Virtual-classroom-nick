@@ -1,0 +1,697 @@
+// Name: TheClassroom 
+// Version: 1.0 
+// Author: Peter Andrew Onuh - C&I leasign IT
+// Comment: SASS/CSS implementation
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap);
+
+@import './variable';
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $purple;
+}
+
+
+// .collapse:not(.show) {
+//   display: block;
+// }
+
+// .custom-imgs {
+//   overflow: visible !important;
+//   margin: 0 !important;
+//   // position: relative !important;
+// }
+
+.card-imgs div {
+  overflow: visible !important;
+  margin: 0 auto !important;
+}
+
+body {
+  background: $bg-primary;
+  font-family: 'Poppins';
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 54px;  
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.title {
+  color: $sub-heading-color;
+}
+
+.btn {
+  box-shadow: 0px 6px 14px rgba(22, 22, 17, 0.12);
+  border-radius: $button-radius;
+  padding: 10px 50px;
+  color: $black;
+  font-weight: 600;
+}
+
+p{
+  margin-bottom: 0px !important;
+}
+
+.btn-default {
+  background: $button-bg;
+}
+
+.btn-white {
+  background: $white;
+  border-radius: 9px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;  
+}
+
+
+.header {
+  position: relative;
+  background: url('../public/images/svg/header.svg');
+  background-size: cover;
+  padding: 40px 0 50px 0;
+  margin-bottom: 20px;
+}
+
+.hero {
+  // position: absolute;
+  // width: 100%;
+  // left: 0;
+  // top: 0;
+  // z-index: 99;
+
+  img {
+    width: 100%;
+  }
+}
+
+header {
+  nav {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;      
+
+    .navbar-brand {
+      img {
+        width: 80%;
+        margin-top: -10px;
+      }
+    }
+
+    .nav-item, .nav-link {
+      backdrop-filter: (0px) !important;
+    }
+  }
+
+  .nav-item {
+    margin: 0 8px;
+    .nav-link {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 170%;
+      color: white!important;        
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+// Sections
+.about, .how, .pricing {
+  .btn {
+    border-radius: 9px;
+  }
+}
+
+.about {
+  .card-imgs {
+    margin-top: -50px;
+  }
+}
+
+.ant-card-body{
+  padding: 10px !important;
+}
+
+.how, .faq{
+  // margin: 100px 0;
+  padding: 100px 0;
+
+  ul {
+    padding-left: 0;
+    li {
+      margin: 10px
+    }
+  }
+}
+
+.faq {
+  h2 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+  }
+}
+
+// Glass morph card
+.card-box {
+  position: absolute;
+   right: 30px;
+   top: -10px;
+  width: 302px;
+  background: $opaque-bg;
+  border-radius: 20px;
+  img {
+    width: 100%;
+    margin-right: -50px;
+    margin-top: -60px;
+  }
+}
+
+
+
+
+// Blur background with colors
+.elipse-wrapper {
+  margin: 150px 0 0 150px;
+  opacity: .6;
+  filter: blur(45px);
+  position: relative;
+  width: 350px;
+  
+  .elipse {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50px, 50px);
+  }
+
+  .elipse-purple {
+    background: $purple;
+    bottom: -60px;
+    left: 145px;
+  }
+
+  .elipse-primary {
+    background: $secondary-blue;
+    top: -165px;
+    left: 5px;
+  }
+
+  .elipse-magenta {
+    background: $magenta;
+    bottom: -130px;
+    left: 5px;
+  }
+}
+
+// How it works
+.how {
+  .card-box {
+    left: 50px;
+    .card-imgs {
+      margin-left: -50px;
+      // position: absolute !important;
+      // left: -50px !important;
+      // margin-top: -50px;
+    }
+  }
+
+  .elipse-purple {
+    background: $purple;
+    bottom: -60px;
+    left: 0px;
+  }
+
+  .elipse-primary {
+    background: $secondary-blue;
+    top: -195px;
+    left: 105px;
+  }
+
+  .elipse-magenta {
+    background: $magenta;
+    bottom: -130px;
+    left: 105px;
+  }  
+}
+
+//Pricing
+.pricing {
+
+  .pricing-data {
+    position: relative;
+    background: $opaque-bg;
+    border-radius: 20px;
+    padding: 35px 20px;
+    text-align: center;
+    margin: 20px 0;
+    // z-index: 4;
+
+    .pricing-info {
+      margin: 40px 0;
+      text-align: left;
+    }
+  }
+  .elipse-wrapper {
+    position: absolute;
+    top: 200px;
+    left: -20px;
+    z-index: -1;
+
+
+    .elipse-primary {
+      top: -180px;
+      left: -30px;
+      width: 200px;
+      height: 200px;
+    }
+
+    .elipse-magenta {
+      left: -110px;
+      width: 150px;
+      height: 150px;      
+    }
+
+    .elipse-purple {
+      left: 70px;
+      top: -20px;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+
+.answers {
+  position: relative;
+  // width: 450px;
+  background: $opaque-bg;
+  border-radius: 20px;
+  padding: 25px 35px;
+  text-align: center;
+
+  .link {
+    margin: 0 auto !important;
+    a {
+      color: $purple;
+    }
+  }
+
+  p {
+    margin: 20px 0;
+    line-height: 170%;
+    text-align: left;
+  }
+
+  .elipse-wrapper {
+    position: absolute;
+    right: -200px;
+    top: 200px;
+    z-index: -1;
+    transform: rotate(45deg);
+
+    .elipse {
+      width: 150px;
+    }
+
+    .elipse-magenta {
+      bottom: -60px;
+      left: 145px;
+    }
+  
+    .elipse-primary {
+      top: -165px;
+      left: 5px;
+    }
+  
+    .elipse-purple {
+      bottom: -130px;
+      left: 5px;
+    }    
+  }
+}
+
+// .agora_video_player {
+//   top: 50% !important;
+//   left: 50 !important;
+//   display: none !important;
+// }
+
+// Footer
+footer {
+  background: linear-gradient(190.82deg, #FDECF7 -0.16%, #FFFCEB 110.75%);
+  -webkit-background: linear-gradient(190.82deg, #FDECF7 -0.16%, #FFFCEB 110.75%);
+  -moz-background: linear-gradient(190.82deg, #FDECF7 -0.16%, #FFFCEB 110.75%);
+  padding: 50px 0;
+
+  .social-links {
+    padding: 20px 0;
+    ul {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin: 17px;
+        i {font-size: 22px;}
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .footer-widget {
+    padding: 0 40px;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        margin: 15px 0;
+        a {
+          color: $text-color;
+        }
+      }
+    }
+
+    form {
+      input[type=text], textarea {
+        border-radius: 9px;
+        &:focus {
+          box-shadow: none;
+        }
+
+        &::placeholder {
+          color: $text-color
+        }
+      }
+    }
+  }
+}
+
+// Signup
+.signup {
+  margin-top: 50px;
+
+  .card {
+    position: relative;
+    background: $opaque-bg;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 4;
+    border: none;
+
+    img {
+      width: 100%;
+    }
+    
+    .link {
+      margin: 10px 0;
+    }
+
+    .tutor-card  {
+      margin: 45px 0;
+    }
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 15px 150px;
+    span {
+      margin-left: 40px;
+    }
+  }
+  .elipse-wrapper {
+    position: absolute;
+    top: 130px;
+    left: -20px;
+    z-index: -1;
+
+
+    .elipse-primary {
+      top: -180px;
+      left: -30px;
+      width: 200px;
+      height: 200px;
+    }
+
+    .elipse-magenta {
+      left: -110px;
+      width: 150px;
+      height: 150px;      
+    }
+
+    .elipse-purple {
+      left: 70px;
+      top: -20px;
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+
+
+  form {
+    button {
+      border-radius: 9px;
+      background: $button-bg;
+      padding: 0;
+      box-shadow: 0px 6px 14px rgba(22, 22, 17, 0.12);      
+      border: none !important;
+    }
+
+    .link {
+      margin: 35px 0;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin: 40px 0;
+    }
+    input[type=text] {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.signup-single {
+  padding: 20px 0;
+  .elipse-wrapper {
+    position: absolute;
+    top: 130px;
+    left: -90px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    .elipse-primary {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+}
+
+
+form {
+  input[type=text], textarea {
+    &:focus {
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: $text-color
+    }
+  }
+}
+
+.form-control {
+  box-shadow: none !important;
+  // border: 1px solid #161611;
+}
+
+// Media query
+@media screen and (min-width: 320px) and (max-width: 992px) {
+
+  .elipse-wrapper {
+    width: 50%;
+  }
+
+  .faq .elipse-wrapper {
+    left: -30px;
+  }
+
+  .faq {
+    .elipse-wrapper {
+      top: 35%;
+    }
+    .answers {
+      margin: 30px 0;
+    }
+  }
+
+  .pricing .elipse-wrapper {
+    left: 50px;
+    top: 150px;
+  }
+
+  .about, .how {
+    .card-box {
+      position: relative;
+      margin: 0;
+    }
+    .elipse-wrapper {
+      margin: 100px 0;
+      top: 100px;
+      left: 30%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  .how {
+    .card-box {
+      left: 0;
+      .card-imgs {
+        position: relative;
+        margin: 70px auto !important;
+      }
+    }
+  }
+  .card-box {
+    width: 95%;
+    left: 2.5%;
+  }
+
+  .how, .faq{
+    padding: 50px 0;
+  }
+  
+  .elipse-wrapper {
+    width: 20%;
+  }
+
+  .faq {
+    .elipse-wrapper {
+      top: 55%;
+      left: -70px;
+      // display: none;
+
+      .elipse-magenta, .elipse-primary, .elipse-purple {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .pricing .elipse-wrapper {
+    left: 0;
+  }
+
+  .about, .how {
+    .elipse-wrapper {
+      left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html, body, h1, h2, h3,h4,h5 {
+    font-size: 14px;
+  }
+  .signup {
+    header {
+      display: block;
+      margin: 15px 0;
+      span {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .faq {
+    .elipse-wrapper {
+      left: 50px;
+    }
+  }
+  .pricing {
+    .btn {
+      padding: 10px;
+    }
+    .elipse-wrapper {
+      width: 25%;
+      left: 0px;
+      .elipse-purple, .elipse-primary, .elipse-magenta {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+  .how {
+    .elipse-wrapper {
+      left: -50px;
+    }
+  }
+}
+
+// button {
+//   color: #ffffff !important; 
+// }
+
+.nav-link {
+  color: $white !important;
+}
+
+.btn-flat {
+  border: none;
+  box-shadow: none;
+  background: inherit;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+
+@import './dashboard';
+@import './student';

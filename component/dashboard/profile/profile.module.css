@@ -1,0 +1,87 @@
+.profile {
+  background: #FFFFFF;
+  padding: 70px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input, .select, .textarea {
+  background: #EBFAFF;
+  border-radius: 10px;
+  border: none !important;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  border: solid 1px #F15BB5 !important;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.buttons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.buttons button {
+  border-radius: 10px;
+  padding: 9px 50px;
+  border: none;
+  font-weight: 600;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  margin: 4px;
+}
+
+.buttons button:first-child {
+  background: #4166f5;
+  border: solid 1px #4166f5;
+}
+
+.buttons button:first-child:hover {
+  background: #FFFFFF;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.buttons button:last-child {
+  background: #FFFFFF;
+  color: #9B5DE5;
+  border: solid 1px #9B5DE5;
+}
+
+.buttons button:last-child:hover {
+  background: #9B5DE5;
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.formRow {
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    height: 100%;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .buttons button {
+    padding: 9px 40px;
+  }
+}
+/*# sourceMappingURL=profile.module.css.map */

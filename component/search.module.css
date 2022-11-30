@@ -1,0 +1,137 @@
+.detailsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.detailsWrapper .imgWrapper {
+  border-radius: 7px;
+}
+
+.detailsWrapper .imgWrapper img {
+  border-radius: inherit;
+}
+
+.detailsWrapper h5, .detailsWrapper h6 {
+  display: inline-block;
+}
+
+.row {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.searchCard {
+  cursor: pointer;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  margin-bottom: 30px;
+}
+
+.searchCard:hover {
+  box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.rowSm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.iconColor {
+  color: #4166f5;
+}
+
+.pill {
+  background-color: #4166f5;
+  border-radius: 5px;
+  padding: 6px 9px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.pill:first-child {
+  margin-right: 14px;
+}
+
+.pill i {
+  margin-right: 5px;
+}
+
+.pillWrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.accordion .accordionItem button {
+  background-color: inherit;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2px;
+  font-weight: 600;
+}
+
+.accordion .accordionItem .accordionBody {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.slider {
+  width: 100%;
+  background: #F15BB5;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.ql {
+  font-size: 14px;
+}
+
+.navbg {
+  background-color: #4166f5;
+}
+
+.navbg nav {
+  color: #FFFFFF !important;
+}
+
+.navLink {
+  color: #FFFFFF !important;
+}
+
+.navDropdown {
+  color: #FFFFFF !important;
+}
+/*# sourceMappingURL=search.module.css.map */

@@ -1,0 +1,98 @@
+.cardheader {
+  padding: 10px 30px !important;
+  display: block;
+}
+
+.avatar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 6px;
+}
+
+.nametag {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.nametag p {
+  margin: 0;
+  line-height: 7px;
+  font-size: 12px;
+  color: #9B9B9B;
+  font-weight: 600;
+}
+
+.search input, .search select {
+  width: 100%;
+}
+
+.btn {
+  padding: 5px 7px;
+  font-size: 12px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: .6;
+}
+
+.baseform {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.card {
+  border-radius: 15px 15px;
+  border: solid 1px #4166f5;
+}
+
+.cardheader {
+  background: #4166f5;
+  border-radius: 15px 15px 0 0 !important;
+}
+
+.cardbody table td a {
+  color: #000000;
+}
+
+.cardbody table td a:hover {
+  color: #9B5DE5;
+  text-decoration: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.addteacherbtn {
+  padding: 7px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: solid 1px #4166f5;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.addteacherbtn:hover {
+  background: inherit;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.cardfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+  background: inherit;
+  border-radius: 0 0 15px 15px !important;
+  border: none;
+}
+/*# sourceMappingURL=courses.module.css.map */

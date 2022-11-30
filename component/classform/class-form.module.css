@@ -1,0 +1,168 @@
+.formWrapper {
+  background: #FFFFFF;
+  padding: 70px 30px;
+  height: 100%;
+  margin: 0 20%;
+}
+
+.formWrapper button {
+  border: none;
+  background: transparent;
+}
+
+.input, .select, .textarea {
+  background: #EBFAFF;
+  border-radius: 10px;
+  border: none !important;
+}
+
+.input::-webkit-input-placeholder, .select::-webkit-input-placeholder, .textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  opacity: .7;
+}
+
+.input:-ms-input-placeholder, .select:-ms-input-placeholder, .textarea:-ms-input-placeholder {
+  font-size: 13px;
+  opacity: .7;
+}
+
+.input::-ms-input-placeholder, .select::-ms-input-placeholder, .textarea::-ms-input-placeholder {
+  font-size: 13px;
+  opacity: .7;
+}
+
+.input::placeholder, .select::placeholder, .textarea::placeholder {
+  font-size: 13px;
+  opacity: .7;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  border: solid 1px #F15BB5 !important;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.buttons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.buttons button {
+  border-radius: 10px;
+  padding: 9px 50px;
+  border: none;
+  font-weight: 600;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  margin: 4px;
+}
+
+.buttons button:first-child {
+  background: #4166f5;
+  border: solid 1px #4166f5;
+}
+
+.buttons button:first-child:hover {
+  background: #FFFFFF;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.buttons button:last-child {
+  background: #FFFFFF;
+  color: #9B5DE5;
+  border: solid 1px #9B5DE5;
+}
+
+.buttons button:last-child:hover {
+  background: #9B5DE5;
+  color: #FFFFFF;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.availability ul {
+  padding-left: 0;
+}
+
+.availability ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 11px;
+}
+
+.availability ul li span {
+  border: none;
+}
+
+.formRow {
+  margin: 30px auto;
+}
+
+.inputGroup {
+  margin: 7px 0;
+}
+
+.inputGroup .inputGroupText {
+  background: #FFFFFF;
+  border: none;
+}
+
+.inputGroup button {
+  border: none;
+  background: #FFFFFF;
+  color: #F15BB5;
+}
+
+.addBtn {
+  text-align: right;
+}
+
+.addBtn button {
+  color: #9B5DE5;
+  margin-right: 20px;
+  text-align: right;
+  display: inline-block;
+}
+
+.videoBio {
+  border-radius: 10px;
+  padding: 50px 20px;
+  text-align: center;
+  border: dashed 2px #9B5DE5;
+}
+
+.videoBio i {
+  color: #9B5DE5;
+  font-size: 55px;
+}
+
+.videoBio p {
+  font-size: 14px;
+  color: #5C5A4B;
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    height: 100%;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .buttons button {
+    padding: 9px 40px;
+  }
+}
+/*# sourceMappingURL=class-form.module.css.map */

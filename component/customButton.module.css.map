@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;CAEnB",
+    "sources": [
+        "customButton.module.scss"
+    ],
+    "names": [],
+    "file": "customButton.module.css"
+}

@@ -1,0 +1,136 @@
+@import '../../styles/variable';
+
+.formWrapper {
+  background: $white;
+  padding: 70px 30px;
+  height: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  margin: 0 20%;
+
+  button {border: none; background: transparent;}
+}
+
+.input, .select, .textarea {
+  background: #EBFAFF;
+  border-radius: 10px;
+  border: none !important;
+    &::placeholder {
+      font-size: 13px;
+      opacity: .7;
+    }
+  &:focus {
+    border: solid 1px $magenta !important;
+    transition: all .5s ease-out;
+  }
+}
+
+.buttons {
+  display: inline-flex;
+  width: 50%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+  button {
+    border-radius: 10px;
+    padding: 9px 50px;
+    border: none;
+    font-weight: 600;
+    transition: all .5s ease-out;
+    margin: 4px;
+    &:first-child {
+      background: $secondary_yellow;
+      border: solid 1px $secondary_yellow;
+      &:hover {
+        background: $white;
+        // color: $white;
+        transition: all .5s ease-out;
+      }
+    }
+    &:last-child {
+      background: $white;
+      color: $purple;
+      border: solid 1px $purple;
+      &:hover {
+        background: $purple;
+        color: $white;
+        transition: all .5s ease-out;
+      }
+    }
+  }
+
+}
+
+.availability {
+  ul {
+    padding-left: 0;
+    li {
+      display: inline-flex;
+      align-items: center;
+      font-size: 11px;
+
+      span {
+        border: none;
+      }
+    }
+  }
+}
+
+.formRow {
+  margin: 30px auto;
+}
+
+.inputGroup {
+  margin: 7px 0;
+  .inputGroupText {
+    background: $white;
+    border: none;
+  }
+  button {
+    border: none;
+    background: $white;
+    color: $magenta;
+  }
+}
+
+.addBtn {
+  text-align: right;
+  button {
+    color: $purple;
+    margin-right: 20px;
+    text-align: right;
+    display: inline-block;
+  }
+}
+
+.videoBio {
+  border-radius: 10px;
+  padding: 50px 20px;
+  text-align: center;
+  border: dashed 2px $purple;
+
+  i {
+    color: $purple;
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 14px;
+    color:  #5C5A4B;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    height: 100%;
+  }
+
+  .buttons {
+    width: 100%;
+    
+    button {
+      padding: 9px 40px;
+    }
+  }
+}

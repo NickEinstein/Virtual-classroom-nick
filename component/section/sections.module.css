@@ -1,0 +1,22 @@
+.sectionBox {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 40px 20px;
+  -webkit-box-shadow: 2px;
+          box-shadow: 2px;
+  max-width: 200px;
+  border-radius: 9px;
+  background-color: #FFF;
+  margin: 5px;
+  border: solid 1px #4166f5;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  cursor: pointer;
+}
+
+.sectionBox:hover {
+  background-color: #4166f5;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+/*# sourceMappingURL=sections.module.css.map */

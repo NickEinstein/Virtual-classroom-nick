@@ -1,0 +1,55 @@
+@import '../../styles/variable';
+
+.paralax {
+  background-image: url("../../assets/banner.jpg");
+  background-size: cover;
+  padding: 200px 0;
+  position: relative;
+  // opacity: 1;
+  .searchg {
+    // position: absolute;
+    // width: 100%;
+    // left: 0;
+    // z-index: 999;
+  }
+}
+
+.formWrapper {
+  border-radius: 9px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 9px;
+  box-shadow: none;
+  border: solid 1px $secondary-yellow;
+  transition: all .5s ease-out;
+  &:hover {
+    background-color: $primary-yellow;
+    transition: all .5s ease-out;
+  }
+}
+
+.searchableTextField {
+  position: relative;
+}
+
+.subjectlist {
+  list-style: none;
+  background: $white !important;
+  width: 100%;
+  text-align: left;
+  max-height: 400px;
+  // padding: 10px;
+  padding-left: 0;
+  position: absolute;
+  left: 0;
+  li {
+    cursor: pointer;
+    padding: 5px;
+    // margin: 5px 0;
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+}

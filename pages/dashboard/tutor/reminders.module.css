@@ -1,0 +1,227 @@
+.reminderwrapper {
+  background: #ffffff;
+  margin: 0 20px;
+  padding: 20px;
+}
+
+.calendar {
+  display: table;
+  border: 0.5px solid #9B5DE5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px 5px;
+  background: #ffffff;
+  width: 90%;
+  margin-left: 0 !important;
+  margin-right: 20px !important;
+}
+
+.calendaritem {
+  display: table-cell;
+  font-weight: 500;
+  padding: 9px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.calendaritem:hover {
+  background: linear-gradient(166.46deg, #EBFAFF -0.1%, #FDECF7 100.01%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.day {
+  color: magenta;
+  font-weight: 600;
+  display: block;
+  font-size: 29px;
+  text-align: center;
+}
+
+.active {
+  background: linear-gradient(166.46deg, #EBFAFF -0.1%, #FDECF7 100.01%);
+  border-radius: 10px;
+}
+
+.time {
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.calendartitle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 10px 0;
+}
+
+.buttons button {
+  background: #ffffff;
+  border: solid 1px #9B5DE5;
+  border-radius: 6px;
+  color: #9B5DE5;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.select {
+  color: #9B5DE5;
+  border-radius: 6px;
+  border: solid 1px #9B5DE5;
+  padding: 5px;
+  padding: 5px;
+  margin: 0;
+}
+
+.select i {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.select select {
+  font-size: 12px;
+  border: none;
+}
+
+.select select:focus {
+  border: none;
+  outline: none;
+}
+
+.reminderList {
+  width: 70%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reminderitem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #F4EDFC;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #000000;
+  margin: 20px 0;
+}
+
+.reminderitem div:first-child span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #9B9B9B;
+  display: block;
+}
+
+.reminderitem span:last-child {
+  font-weight: 600;
+}
+
+.reminder {
+  margin: 20px 0;
+}
+
+.reminderform h4, .reminderform h6 {
+  color: magenta;
+}
+
+.reminderform input, .reminderform select {
+  border: none;
+  background: #EBFAFF;
+  border-radius: 10px;
+}
+
+.reminderform input:focus, .reminderform select:focus {
+  background: #EBFAFF;
+}
+
+.reminderform input::-webkit-input-placeholder, .reminderform select::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #9B9B9B !important;
+}
+
+.reminderform input:-ms-input-placeholder, .reminderform select:-ms-input-placeholder {
+  font-size: 14px;
+  color: #9B9B9B !important;
+}
+
+.reminderform input::-ms-input-placeholder, .reminderform select::-ms-input-placeholder {
+  font-size: 14px;
+  color: #9B9B9B !important;
+}
+
+.reminderform input::placeholder, .reminderform select::placeholder {
+  font-size: 14px;
+  color: #9B9B9B !important;
+}
+
+.formgroup {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 678px) {
+  .calendar {
+    width: 100%;
+  }
+  .calendaritem {
+    display: inline-block;
+  }
+  .reminderwrapper {
+    margin: 0 5px;
+  }
+  .reminderList, .calendartitle {
+    width: 100%;
+  }
+  .calendartitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .reminderitem {
+    font-size: 12px;
+  }
+  .reminderform h4 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  .calendar {
+    padding: 0;
+  }
+  .calendaritem {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=reminders.module.css.map */
