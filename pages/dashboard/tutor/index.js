@@ -53,7 +53,7 @@ export default function Tutor() {
 
     // )
     getEngagements();
-    getTeachersClasses()
+    getTeachersClasses();
     toGetUserProfile();
 
     // if(route.isReady) {
@@ -62,19 +62,19 @@ export default function Tutor() {
     // }
   }, []);
 
-   useEffect(() => {
-    getApproved()
-    getUnApproved()
-     // console.log(user)
-     //     localStorage.getItem("role");
-     // console.log(
-     //   // localStorage.getItem("role")
-     // )
-     // if(route.isReady) {
-     //   getUser()
-     //   analytics()
-     // }
-   }, [engagements]);
+  useEffect(() => {
+    getApproved();
+    getUnApproved();
+    // console.log(user)
+    //     localStorage.getItem("role");
+    // console.log(
+    //   // localStorage.getItem("role")
+    // )
+    // if(route.isReady) {
+    //   getUser()
+    //   analytics()
+    // }
+  }, [engagements]);
 
   function analytics() {
     let userID = user.id;
@@ -99,7 +99,7 @@ export default function Tutor() {
     });
 
     console.log(res);
-    setTeachersClasses(res?.data?.data)
+    setTeachersClasses(res?.data?.data);
 
     if (res) {
       // setCall(!call)
@@ -118,10 +118,6 @@ export default function Tutor() {
     setNo_Of_Students(stud);
   };
 
-   
-
-
-
   const toAccept = async (id) => {
     console.log(id);
     let payload = {
@@ -136,32 +132,29 @@ export default function Tutor() {
       // auth: false,
     });
 
-    if (res?.status == 200){
-       Swal.fire({
-         title: "Success",
-         text: `${res.data.message}`,
-         showCloseButton: true,
-       });
+    if (res?.status == 200) {
+      Swal.fire({
+        title: "Success",
+        text: `${res.data.message}`,
+        showCloseButton: true,
+      });
 
-       handleClose();
-       handleClose2();
+      handleClose();
+      handleClose2();
+    } else {
+      Swal.fire({
+        title: "",
+        text: `${res.data.message}`,
+        showCloseButton: true,
+      });
     }
-    else{
-       Swal.fire({
-         title: "",
-         text: `${res.data.message}`,
-         showCloseButton: true,
-       });
-    }
-
-   
   };
 
-  const addToClass = (rec)=>{
-    setEngagement_id(rec.key)
-// console.log(rec)
-handleShow()
-  }
+  const addToClass = (rec) => {
+    setEngagement_id(rec.key);
+    // console.log(rec)
+    handleShow();
+  };
 
   const toGetUserProfile = async () => {
     // console.log(k)
@@ -189,30 +182,31 @@ handleShow()
     //     class_date : "2022-09-14",
     //     engagement_id : +id
     // }
-    console.log(payload)
+    console.log(payload);
     const res = await get({
       endpoint: `get-meeting-link/${payload.meetingId}`,
       // body: payload,
       // auth: false,
     });
     console.log(res);
+    // setLink(res?.data?.data);
     setLink(res?.data?.data?.zoom?.url);
     setShowLink(!showLink);
-    handleShow2(true)
+    handleShow2(true);
 
-     if (res?.status == 200 || res?.status == 201) {
-       Swal.fire({
-         title: "Success",
-         text: `${res.data.message}`,
-         showCloseButton: true,
-       });
-     } else {
-       Swal.fire({
-         title: "Sorry",
-         text: `${res.data.message}`,
-         showCloseButton: true,
-       });
-     }
+    if (res?.status == 200 || res?.status == 201) {
+      Swal.fire({
+        title: "Success",
+        text: `${res.data.message}`,
+        showCloseButton: true,
+      });
+    } else {
+      Swal.fire({
+        title: "Sorry",
+        text: `${res.data.message}`,
+        showCloseButton: true,
+      });
+    }
   };
 
   const columns1 = [
@@ -269,153 +263,151 @@ handleShow()
               width: "95%",
             }}
           >
-           Generate Meeting Link
+            Generate Meeting Link
           </Button>
         );
       },
     },
   ];
-const columns2 = [
-  {
-    title: "Day",
-    dataIndex: "name",
-    key: "name",
-  },
-  {
-    title: "Subject",
-    dataIndex: "subject",
-    key: "age",
-  },
-  {
-    title: "Time ",
-    dataIndex: "status",
-    key: "id",
-    width: "20%",
-  },
-  {
-    title: "Action",
-    dataIndex: "action",
-    render: (_, record) => {
-      //   const editable = isEditing(record);
-      return (
-        <Button
-          block
-          onClick={() => addToClass(record)}
-          style={{
-            backgroundColor: "#1C811C",
-            borderColor: "#1C811C",
-            color: "white",
-            width: "95%",
-          }}
-        >
-          Add to a Class
-        </Button>
-      );
+  const columns2 = [
+    {
+      title: "Day",
+      dataIndex: "name",
+      key: "name",
     },
-  },
-  
-];
+    {
+      title: "Subject",
+      dataIndex: "subject",
+      key: "age",
+    },
+    {
+      title: "Time ",
+      dataIndex: "status",
+      key: "id",
+      width: "20%",
+    },
+    {
+      title: "Action",
+      dataIndex: "action",
+      render: (_, record) => {
+        //   const editable = isEditing(record);
+        return (
+          <Button
+            block
+            onClick={() => addToClass(record)}
+            style={{
+              backgroundColor: "#1C811C",
+              borderColor: "#1C811C",
+              color: "white",
+              width: "95%",
+            }}
+          >
+            Add to a Class
+          </Button>
+        );
+      },
+    },
+  ];
 
- const columns3 = [
-   {
-     title: "Day",
-     dataIndex: "name",
-     key: "name",
-   },
-   {
-     title: "Subject",
-     dataIndex: "subject",
-     key: "age",
-   },
-   {
-     title: "Time ",
-     dataIndex: "status",
-     key: "id",
-     width: "20%",
-   },
-  //  {
-  //    title: "Action",
-  //    dataIndex: "action",
-  //    render: (_, record) => {
-  //      //   const editable = isEditing(record);
-  //      return (
-  //        <Button
-  //          block
-  //          onClick={() => addToClass(record)}
-  //          style={{
-  //            backgroundColor: "#1C811C",
-  //            borderColor: "#1C811C",
-  //            color: "white",
-  //            width: "95%",
-  //          }}
-  //        >
-  //          Add to a Class
-  //        </Button>
-  //      );
-  //    },
-  //  },
-   {
-     title: "Join Meeting",
-     dataIndex: "action",
-     render: (_, record) => {
-       //   const editable = isEditing(record);
-       return (
-         <Button
-           block
-           onClick={() => toMeet(record)}
-           style={{
-             backgroundColor: "#1C811C",
-             borderColor: "#1C811C",
-             color: "white",
-             width: "95%",
-           }}
-         >
-           Generate Meeting Link
-         </Button>
-       );
-     },
-   },
- ];
+  const columns3 = [
+    {
+      title: "Day",
+      dataIndex: "name",
+      key: "name",
+    },
+    {
+      title: "Subject",
+      dataIndex: "subject",
+      key: "age",
+    },
+    {
+      title: "Time ",
+      dataIndex: "status",
+      key: "id",
+      width: "20%",
+    },
+    //  {
+    //    title: "Action",
+    //    dataIndex: "action",
+    //    render: (_, record) => {
+    //      //   const editable = isEditing(record);
+    //      return (
+    //        <Button
+    //          block
+    //          onClick={() => addToClass(record)}
+    //          style={{
+    //            backgroundColor: "#1C811C",
+    //            borderColor: "#1C811C",
+    //            color: "white",
+    //            width: "95%",
+    //          }}
+    //        >
+    //          Add to a Class
+    //        </Button>
+    //      );
+    //    },
+    //  },
+    {
+      title: "Join Meeting",
+      dataIndex: "action",
+      render: (_, record) => {
+        //   const editable = isEditing(record);
+        return (
+          <Button
+            block
+            onClick={() => toMeet(record)}
+            style={{
+              backgroundColor: "#1C811C",
+              borderColor: "#1C811C",
+              color: "white",
+              width: "95%",
+            }}
+          >
+            Generate Meeting Link
+          </Button>
+        );
+      },
+    },
+  ];
 
-
-  const getUnApproved = ()=>{
+  const getUnApproved = () => {
     // alert('ji')
-const datazz = engagements?.filter((e, idx) => (e?.status ==`false`));
-setUnApproved(true);
-setUnApprovedNo(engagements?.filter((e, idx) => e?.status == `false`));
-setApproved(false);
-console.log(datazz)
-setDataz2(
-  datazz?.map((e, idx) => ({
-    name: e?.relationships?.student?.name,
-    subject: e?.relationships?.subject?.name,
-    status: e?.status && e.status == "false" ? "Pending Approval" : "Approved",
-    key: e?.id,
-    meetingId: e?.class_meeting_id,
-  }))
-);
-  }
+    const datazz = engagements?.filter((e, idx) => e?.status == `false`);
+    setUnApproved(true);
+    setUnApprovedNo(engagements?.filter((e, idx) => e?.status == `false`));
+    setApproved(false);
+    console.log(datazz);
+    setDataz2(
+      datazz?.map((e, idx) => ({
+        name: e?.relationships?.student?.name,
+        subject: e?.relationships?.subject?.name,
+        status:
+          e?.status && e.status == "false" ? "Pending Approval" : "Approved",
+        key: e?.id,
+        meetingId: e?.class_meeting_id,
+      }))
+    );
+  };
 
-   const getApproved = () => {
+  const getApproved = () => {
     //  alert("ji");
-     const datazz = engagements?.filter((e, idx) => e?.status !== `false`);
+    const datazz = engagements?.filter((e, idx) => e?.status !== `false`);
 
-     
-     setApproved(true);
-     setUnApproved(false);
-// console.log(datazz);
+    setApproved(true);
+    setUnApproved(false);
+    // console.log(datazz);
 
-     setDataz3(
-       datazz?.map((e, idx) => ({
-         name: e?.relationships?.student?.name,
-         subject: e?.relationships?.subject?.name,
-         status:
-           e?.status && e?.status == "false" ? "Pending Approval" : "Approved",
-         key: e.id,
-         meetingId: e?.class_meeting_id,
-       }))
-     );
-   };
+    setDataz3(
+      datazz?.map((e, idx) => ({
+        name: e?.relationships?.student?.name,
+        subject: e?.relationships?.subject?.name,
+        status:
+          e?.status && e?.status == "false" ? "Pending Approval" : "Approved",
+        key: e.id,
+        meetingId: e?.class_meeting_id,
+      }))
+    );
+  };
 
   const dataz = engagements?.map((e, idx) => ({
     name: e?.relationships?.student?.name,

@@ -118,17 +118,17 @@ const handleCancel = () => {
     },
 
     {
-      title: "Address",
+      title: "Registration Date",
       dataIndex: "created_at",
       key: "id",
       width: "20%",
     },
-    {
-      title: "Degree",
-      dataIndex: "degree",
-      key: "id",
-      width: "20%",
-    },
+    // {
+    //   title: "Degree",
+    //   dataIndex: "degree",
+    //   key: "id",
+    //   width: "20%",
+    // },
     // {
     //   title: "Date Registered",
     //   dataIndex: "created_at",

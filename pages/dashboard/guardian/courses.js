@@ -60,7 +60,7 @@ export default function Courses() {
     // getCategories()
   }, [0]);
 
-  const getClassFillTable = async (id) => {
+  const getClassFillTable = async (id,name) => {
     const res = await get({
       endpoint: `students/${id}`,
       //  body: payload,
@@ -68,7 +68,7 @@ export default function Courses() {
 
     console.log(res?.data?.data?.relationships?.engagements);
     //  setIndividualClasses(res?.data?.data?.relationships?.classes);
-    fillTable(res?.data?.data?.relationships?.engagements);
+    fillTable(res?.data?.data?.relationships?.engagements, name);
   };
 
   const toGetEngagements = async () => {
@@ -112,7 +112,7 @@ export default function Courses() {
     router.push(`${router.pathname}/${id}`);
   }
 
-  const fillTable = (tam, idx) => {
+  const fillTable = (tam, name) => {
     console.log(tam);
     // let tableholder = tam?.relationships?.student.map((e, idx) => ({
     //   key: idx,
@@ -125,7 +125,7 @@ export default function Courses() {
 
     let tableholder = tam.map((tam, idx) => ({
       key: idx,
-      name: tablename,
+      name: name,
       subject: tam?.relationships?.subject?.name,
       day: tam?.relationships?.class?.day,
       // day: tam?.relationships?.subject?.dat,
@@ -531,7 +531,7 @@ export default function Courses() {
               class="m-r-3"
               style={{ marginRight: "5px" }}
               onClick={() => {
-                getClassFillTable(e.id);
+                getClassFillTable(e?.id,e?.name);
                 setTableName(e?.name);
               }}
               // onClick={() => fillTable(e)}
