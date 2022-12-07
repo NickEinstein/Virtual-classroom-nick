@@ -22,7 +22,10 @@ export default function Dashboard() {
   }
 
   setTimeout(() => {
-    setUserType(localStorage.setItem('user_type', 'student'))
+    if (typeof window !== "undefined") {
+    setUserType(window.localStorage.setItem("user_type", "student"));
+      
+    }
   }, 2000);
 
   // const addCourse() {

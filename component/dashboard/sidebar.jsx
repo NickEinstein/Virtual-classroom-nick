@@ -11,12 +11,12 @@ export default function Sidebar(props) {
   console.log(user)
   let k ='r'
 useEffect(()=>{
-  // if (typeof window !== "undefined") {
+  if (typeof window !== "undefined") {
 
   //   // localStorage.getItem("token");
     k = localStorage.getItem("role");
     
-  //   }
+    }
 // console.log(k)
 },[k])
 console.log(k)
