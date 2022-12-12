@@ -384,7 +384,7 @@ export default function SearchForm(props) {
         Hello
         </div> */}
         <div
-          className="container d-flex"
+          className="container"
           style={{ border: "", justifyContent: "center" }}
         >
           {displayTeachers?.length > 0 && (
@@ -395,14 +395,15 @@ export default function SearchForm(props) {
           )}
           {displayTeachers?.length > 0 ? (
             displayTeachers?.map((e, idx) => (
-              <div key={idx} style={{ marginLeft: "20%" }}>
+              <div key={idx} style={{ display:'flex', justifyContent:'center' }}>
                 <Card
                   style={{
                     minWidth: 300,
-                    maxWidth: "60%",
+                    maxWidth: "70%",
                     padding: "20px",
                     display: "flex",
                     justifyContent: "space-between",
+                    marginBottom:'10px'
                   }}
                   hoverable
                 >
@@ -410,7 +411,7 @@ export default function SearchForm(props) {
                     <div>
                       <Avatar
                         className="mr-4"
-                        style={{ width: 80, height: 80 }}
+                        style={{ width: 50, height: 50 }}
                         src="https://joeschmoe.io/api/v1/random"
                       />
                     </div>
